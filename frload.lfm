@@ -1,0 +1,85 @@
+object Frame1: TFrame1
+  Left = 0
+  Height = 733
+  Top = 0
+  Width = 959
+  ClientHeight = 733
+  ClientWidth = 959
+  Color = clSilver
+  ParentColor = False
+  TabOrder = 0
+  DesignLeft = 424
+  DesignTop = 792
+  object Button1: TButton
+    Left = 24
+    Height = 44
+    Top = 29
+    Width = 144
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 192
+    Height = 44
+    Top = 29
+    Width = 144
+    Caption = 'Populate'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object StringGrid1: TStringGrid
+    Left = 24
+    Height = 288
+    Top = 432
+    Width = 912
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ColumnClickSorts = True
+    MouseWheelOption = mwGrid
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goSmoothScroll]
+    TabOrder = 2
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 24
+    Height = 25
+    Top = 384
+    Width = 241
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 241
+    DataSource = DataModule1.DataSource1
+    Options = []
+    TabOrder = 3
+  end
+  object DBGrid1: TDBGrid
+    Left = 24
+    Height = 279
+    Top = 96
+    Width = 935
+    Anchors = [akTop, akLeft, akRight]
+    Color = clWindow
+    Columns = <>
+    DataSource = DataModule1.DataSource1
+    TabOrder = 4
+  end
+  object CheckBox1: TCheckBox
+    Left = 406
+    Height = 28
+    Top = 45
+    Width = 137
+    Caption = 'CheckBox1'
+    OnChange = CheckBox1Change
+    OnClick = CheckBox1Click
+    TabOrder = 5
+  end
+  object OpenDialog1: TOpenDialog
+    left = 672
+    top = 24
+  end
+end

@@ -1,0 +1,45 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 582
+  HorizontalOffset = 1932
+  VerticalOffset = 4
+  Width = 471
+  object MySQL56Connection1: TMySQL56Connection
+    Connected = True
+    LoginPrompt = True
+    DatabaseName = 'AnalyticsExaminer'
+    KeepConnection = True
+    Params.Strings = (
+      'Port=33061'
+    )
+    Password = 'Slamdunk08!'
+    Transaction = SQLTransaction1
+    UserName = 'root'
+    HostName = 'localhost'
+    LogEvents = []
+    left = 71
+    top = 48
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = True
+    Database = MySQL56Connection1
+    left = 71
+    top = 127
+  end
+  object SQLQuery1: TSQLQuery
+    FieldDefs = <>
+    Database = MySQL56Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'SELECT * FROM AnalyticsExaminer.Test;'
+    )
+    Params = <>
+    left = 72
+    top = 216
+  end
+  object DataSource1: TDataSource
+    DataSet = SQLQuery1
+    left = 72
+    top = 312
+  end
+end
