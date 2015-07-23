@@ -1,42 +1,48 @@
 object Form1: TForm1
   Left = 590
-  Height = 794
+  Height = 684
   Top = 338
-  Width = 1178
+  Width = 1076
   Caption = 'Audit Examiner'
-  ClientHeight = 764
-  ClientWidth = 1178
+  ClientHeight = 654
+  ClientWidth = 1076
   Menu = MainMenu1
   OnCreate = FormCreate
   LCLVersion = '1.4.0.2'
   object StatusBar1: TStatusBar
     Left = 0
     Height = 26
-    Top = 738
-    Width = 1178
+    Top = 628
+    Width = 1076
     Color = clMedGray
     Panels = <>
     ParentColor = False
   end
   object Panel1: TPanel
     Left = 192
-    Height = 732
+    Height = 622
     Top = 0
-    Width = 986
+    Width = 884
     Anchors = [akTop, akLeft, akRight, akBottom]
     Caption = 'Panel1'
-    ClientHeight = 732
-    ClientWidth = 986
+    ClientHeight = 622
+    ClientWidth = 884
     TabOrder = 1
     inline Frame1_1: TFrame1
-      Width = 984
+      Height = 623
+      Width = 882
       Anchors = [akTop, akLeft, akRight, akBottom]
-      ClientWidth = 984
+      ClientHeight = 623
+      ClientWidth = 882
       inherited StringGrid1: TStringGrid
-        Width = 937
+        Height = 178
+        Width = 835
       end
       inherited DBNavigator1: TDBNavigator
         Hints.Strings = (        )
+      end
+      inherited DBGrid1: TDBGrid
+        Width = 833
       end
       inherited OpenDialog1: TOpenDialog
         left = 552
