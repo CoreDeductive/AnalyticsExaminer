@@ -8,8 +8,8 @@ object Frame1: TFrame1
   Color = clSilver
   ParentColor = False
   TabOrder = 0
-  DesignLeft = 424
-  DesignTop = 792
+  DesignLeft = 2660
+  DesignTop = 56
   object Button1: TButton
     Left = 24
     Height = 44
